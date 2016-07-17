@@ -1,7 +1,7 @@
 class Project < ApplicationRecord
   validates :description, :client, presence: true
   validates :price_in_cents, numericality: {only_integer: true, greater_than: 0}
-  validates :start_date, :end_date, presence: true
+  validates :start_date, presence: true
   has_many :reviews
 
   def formatted_price
@@ -14,7 +14,7 @@ class Project < ApplicationRecord
   end
 
   def date_end
-    end_date.strftime("%m/%d/%y")
+    end_date.strftime("%m/%d/%y") unless end_date.nil?
   end
 
 

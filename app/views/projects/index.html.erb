@@ -9,6 +9,7 @@
       <th>Job type</th>
       <th>Description</th>
       <th>Start Date</th>
+      <th>End Date</th>
       <th>Price</th>
       <th>File</th>
       <th>Status</th>
@@ -23,6 +24,7 @@
         <td><%= project.job_type %></td>
         <td><%= project.description %></td>
         <td><%= project.date_start %></td>
+        <td><%= project.date_end %></td>
         <td>$<%= project.formatted_price %></td>
         <td><%= project.file %></td>
         <td><%= link_to 'Details', project %></td>

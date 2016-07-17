@@ -6,6 +6,7 @@ class CreateProjects < ActiveRecord::Migration[5.0]
       t.text :description
       t.integer :price_in_cents
       t.string :file
+      t.string :date
 
       t.timestamps
     end

@@ -10,7 +10,7 @@ class ProjectsController < ApplicationController
   # GET /projects/1
   # GET /projects/1.json
   def show
-      @review = Review.new
+    @review = Review.new
   end
 
   # GET /projects/new
@@ -20,6 +20,15 @@ class ProjectsController < ApplicationController
 
   # GET /projects/1/edit
   def edit
+  end
+
+  # GET /projects/uncompleted
+  def uncompleted
+    @project = Project.where(status: false)
+  end
+
+  def completed
+    @project = Project.where(status: true)
   end
 
   # POST /projects
@@ -70,6 +79,6 @@ class ProjectsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def project_params
-      params.require(:project).permit(:client, :job_type, :description, :price_in_cents, :file, :start_date, :end_date, :completed)
+      params.require(:project).permit(:client, :job_type, :description, :price_in_cents, :file, :start_date, :end_date, :status)
     end
 end

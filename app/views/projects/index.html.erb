@@ -27,11 +27,11 @@
         <td><%= project.date_end %></td>
         <td>$<%= project.formatted_price %></td>
         <td><%= project.file %></td>
+        <td><%= project.status%></td>
         <td><%= link_to 'Details', project %></td>
         <td><%= link_to 'Edit Project', edit_project_path(project) %></td>
         <td><%= link_to 'Delete Project', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-      <td><%= project.completed %></td>
     <% end %>
   </tbody>
 </table>

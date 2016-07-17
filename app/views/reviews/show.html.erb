@@ -7,8 +7,14 @@
 
 <p>
   <strong>Project:</strong>
-  <%= @review.project %>
+  <%= @review.project.client %>
 </p>
 
 <%= link_to 'Edit', edit_review_path(@review) %> |
-<%= link_to 'Back', reviews_path %>
+
+<% if @review.project.nil? %>
+  <%= link_to 'Back', reviews_path %>
+
+<% else %>
+  <%= link_to 'Back', @review.project %>
+<% end %>

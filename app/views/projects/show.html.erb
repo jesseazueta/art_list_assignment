@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @project.client %>
+</p>
+
+<p>
+  <strong>Job type:</strong>
+  <%= @project.job_type %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @project.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  $<%= @project.formatted_price %>
+</p>
+
+<p>
+  <strong>File:</strong>
+  <%= @project.file %>
+</p>
+<p>
+  <strong>Start Date:</strong>
+  <%= @project.date_start %>
+</p>
+<p>
+  <strong>Status:</strong>
+  <%= @project.completed %>
+</p>
+
+
+<%= link_to 'Edit Project', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %> |
+<%= link_to 'Home', root_path %>

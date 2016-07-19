@@ -169,7 +169,7 @@ td {
 }
 .nav_links  {
   text-align: center;
-  margin-top:150px;
+  margin-top:50px;
 }
 
 .back_links {
@@ -234,4 +234,7 @@ td {
 }
 .go_back a {
   color: white;
+}
+.project_all {
+  margin-top: -40px;
 }

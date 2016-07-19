@@ -1,6 +1,10 @@
-<h1>Editing Project</h1>
+<div class ="edit">
+  <h1>Edit Project</h1>
 
 <%= render 'form', project: @project %>
+</div>
 
+<div class="return">
 <%= link_to 'Details', @project %> |
 <%= link_to 'Back', projects_path %>
+</div>

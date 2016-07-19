@@ -21,7 +21,9 @@
   text-align: center;
   color: white;
   font-size: 50px;
-  margin-top: -10px;
+  margin-top: -20px;
+  font-size: 60px;
+  padding-bottom: -30px;
 }
 
 .new_user input:focus {

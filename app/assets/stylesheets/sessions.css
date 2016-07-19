@@ -1,6 +1,38 @@
 
-.form_container {
-text-align: center;
-padding-top: 30em;
+.login_form{
+  margin: auto;
+  padding-left: 10px;
+  padding-bottom: 10px;
 
+}
+
+.login_form .field label {
+  color: white;
+}
+
+.login_form input {
+  border-style: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 20px;
+
+}
+
+.login_form h1 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-top: -10px;
+}
+
+.login_form input:focus {
+  outline: none;
+}
+
+.login_form a {
+
+  color: white;
+
+  padding-left:20px;
+  padding-top:-20px;
 }

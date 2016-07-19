@@ -40,7 +40,7 @@ footer {
   bottom: 0;
 }
 
-.login_form {
+/*.login_form {
 margin-top: 0;
 text-align: center;
 font-size: 3em;
@@ -48,7 +48,7 @@ font-size: 3em;
 }
 .login_form div {
   padding: 1em;
-}
+}*/
 
 .intro {
   color: white;
@@ -62,8 +62,173 @@ font-size: 3em;
   color: white;
   float:right;
   padding-right:210px;
-  margin-top: -60px;
+  margin-top: -80px;
   /*text-decoration: none;*/
   font-size: 25px;
 
+}
+
+.new_project{
+  margin: auto;
+  padding-left: 10px;
+  padding-bottom: 40px;
+  padding-top: -30px;
+
+}
+
+.new_project label {
+  color: white;
+}
+
+.new_project input {
+  border-style: none;
+  border-radius: 10px;
+  padding: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: -20px;
+
+}
+
+.new_project h1 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-top: -20px;
+  margin-bottom: -30px;
+}
+
+.new_project input:focus {
+  outline: none;
+}
+
+.new_project a {
+
+  color: white;
+
+  margin-left:600px;
+  padding-bottom: 10px;
+
+
+}
+
+.descript {
+padding-top:5px;
+}
+
+.reviews {
+  float:right;
+  color:white;
+  margin-right: 80px;
+  margin-top: -250px;
+}
+.reviews input {
+  border-style: none;
+  border-radius: 10px;
+  padding: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: -20px;
+
+}
+
+.details {
+  margin-top: 60px;
+  margin-left: 30px;
+  color:white;
+}
+
+.show_links a {
+  text-align: center;
+  color:white;
+  margin-top: 0;
+}
+.show_links  {
+  text-align: center;
+  margin-top: 100px;
+}
+
+table {
+  color:white;
+  margin-left: 50px;
+}
+table a {
+  color:white;
+
+}
+
+td {
+  padding:10px;
+}
+
+.nav_links a {
+  color:white;
+}
+.nav_links  {
+  text-align: center;
+  margin-top:150px;
+}
+
+.back_links {
+  text-align: center;
+  margin-top:170px;
+}
+.back_links a{
+  color: white;
+
+}
+
+
+
+.edit{
+  margin: auto;
+  padding-left: 10px;
+  padding-bottom: 40px;
+  padding-top: -30px;
+
+}
+
+.edit label {
+  color: white;
+}
+
+.edit input {
+  border-style: none;
+  border-radius: 10px;
+  padding: 3px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-bottom: -10px;
+
+}
+
+
+
+.edit input:focus {
+  outline: none;
+}
+
+.edit h1 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-top: -20px;
+  font-size: 60px;
+  margin-bottom: -30px;
+}
+
+.return {
+  text-align: center;
+}
+.return a{
+  color: white;
+
+}
+
+.go_back {
+  text-align: center;
+  margin-top:210px;
+}
+.go_back a {
+  color: white;
 }

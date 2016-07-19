@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<div class ="details">
 <p>
   <strong>Client:</strong>
   <%= @project.client %>
@@ -40,7 +40,10 @@
      Uncompleted
   <%end%>
 </p>
+</div>
 
+
+<div class= "reviews">
 <h3>Reviews</h3>
 <% @project.reviews.each do |review| %>
   <p>
@@ -53,8 +56,10 @@
 
 <h3>New Review</h3>
 <%= render 'reviews/form', review: @review %>
+</div>
 
-
+<div class="show_links">
 <%= link_to 'Edit Project', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %> |
 <%= link_to 'Home', root_path %>
+</div>

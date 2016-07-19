@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<div class="comments">
 <p>
   <strong>Comment:</strong>
   <%= @review.comment %>
@@ -10,6 +10,10 @@
   <%= @review.project.client %>
 </p>
 
+</div>
+
+<div class="review_links">
+
 <%= link_to 'Edit', edit_review_path(@review) %> |
 
 <% if @review.project.nil? %>
@@ -18,3 +22,5 @@
 <% else %>
   <%= link_to 'Back', @review.project %>
 <% end %>
+
+<div>

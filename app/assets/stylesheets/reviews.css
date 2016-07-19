@@ -2,3 +2,16 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+.comments{
+  margin-top: 100px;
+  margin-left: 30px;
+  color:white;
+}
+
+.review_links a{
+  color:white
+}
+.review_links {
+  text-align: center;
+  margin-top:285px;
+}

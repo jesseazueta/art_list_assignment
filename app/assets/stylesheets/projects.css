@@ -1,4 +1,69 @@
-/*
-  Place all the styles related to the matching controller here.
-  They will automatically be included in application.css.
-*/
+
+body { background-image:url("https://nearfarphotopart2.files.wordpress.com/2014/02/img_0938.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+#user_header {
+  background: url(http://twitrheaders.com/wp-content/uploads/2014/05/Aurora.jpg);
+  height:200px;
+  background-size: cover;
+  width: 100%;
+  color: white;
+  margin-top: -2%;
+}
+.logo {
+  float:left;
+  margin-top:7%;
+padding-left:3em;
+}
+
+.sign_in {
+  float: right;
+  margin: 3em 6em 0 0;
+  font-size: 25px;
+  color: white;
+}
+
+.sign_in a {
+  color: white;
+}
+
+footer {
+  background: url(http://twitrheaders.com/wp-content/uploads/2014/05/Aurora.jpg);
+  background-size: cover;
+  width: 100%;
+  height:10%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.login_form {
+margin-top: 0;
+text-align: center;
+font-size: 3em;
+
+}
+.login_form div {
+  padding: 1em;
+}
+
+.intro {
+  color: white;
+  font-size:25px;
+  text-align: right;
+  padding-top: 20px;
+  padding-right: 60px;
+}
+
+.start_link a{
+  color: white;
+  float:right;
+  padding-right:210px;
+  margin-top: -60px;
+  /*text-decoration: none;*/
+  font-size: 25px;
+
+}

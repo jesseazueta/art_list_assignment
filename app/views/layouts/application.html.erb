@@ -8,12 +8,13 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
   <body>
-      <!-- <div >
-        <img class="art_bg" src="http://cdn.skilledup.com/wp-content/uploads/2014/11/graphic-design-tools-Feature_1290x688_MS.jpg" alt = "Background Image"/>
-      </div> -->
-      <div id="user_header">
-      <div class="sign_in">
+  <div id="user_header">
+
+    <img class="logo" src="https://mail-attachment.googleusercontent.com/attachment/u/0/?ui=2&ik=13177545a0&view=att&th=155fdf979cf6c960&attid=0.6&disp=safe&realattid=f_iqs09z155&zw&saddbat=ANGjdJ_YGWtZOdge5AXlejouhblPbuOTvKV6oMgJxI9h6y_ViwlRMpM_8WjhCf5vWTYVRgYlRO6KFYonaQLcrbrRh75LnShZ-OLasC0rDlLZv3tZeEMOxuwEga6qRMA0b_9Vg3WI2sg69uSV_jDXeBDZBRJeNrn-EvwQpv42rgaxyoKBHDrM5vfV7vEvZ7W_J5tAzonUbC6ujpUT_NWNQm323Il4WksYZUUCXN6POeDQXxbZH-c5ThtDSJZW-VYkro4Uw1-TYrXBz3997pgneMs86JvLoMUMM2-JFKf6aF5hhUZ2ZafHsmBVhpHSc-_UsfRcwd9WobQWfzGQ18pytXI-fhlDSX7Kj8gHtDK6csGf5pW9yiqdLitHsGFlu71hLPeT-h3f_PUppz6PTvIIrukB-Te-Ss2By37_vZ6AknO-lTGqbj9KHuok2NUpJuLsdvMEgHxiSMPW_bmAS_p92jbwVwEy04kJeq-be01HCb7uSHkVPm8jXArZZG1iUUi5gshSY9TdxQGZkMtVyEu2TGFsztxFtRyeV0DSKcWbQyO5t9BHTgp1BtNaZSSP-YbgsCypC-KAphhrOHkpXteH2kUegJyqwCLmCQGUup_-oiPLSGNuFiM00p-27wtHW7srEXOZz8uNniT-nhCsfcuS" height="125px" width="400px"/>
+
+    <div class="sign_in">
       <% if current_user %>
       Logged in as <%= current_user.email %>.
       <%= link_to "Log Out", logout_path %>
@@ -22,12 +23,22 @@
       <%= link_to "Log In", login_path %>
       <% end %>
     </div>
-      </div>
-      <% flash.each do |key, value| %>
+  </div>
+
+
+    <% flash.each do |key, value| %>
       <%= content_tag(:div, class: "alert alert-#{key}") do %>
-      <p><%= value %></p>
+        <p><%= value %></p>
       <% end %>
-      <% end %>
-        <%= yield %>
-  </body>
+    <% end %>
+
+
+              <%= yield %>
+
+
+
+  <footer>
+
+  </footer>
+</body>
 </html>

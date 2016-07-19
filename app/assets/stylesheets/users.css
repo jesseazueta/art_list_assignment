@@ -1,0 +1,37 @@
+.new_user {
+  margin: auto;
+  padding-left: 10px;
+  padding-bottom: 10px;
+
+}
+
+.new_user label {
+  color: white;
+}
+
+.new_user input {
+  border-style: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 20px;
+
+}
+
+.new_user h1 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-top: -10px;
+}
+
+.new_user input:focus {
+  outline: none;
+}
+
+.new_user a {
+
+  color: white;
+
+  padding-left:20px;
+  padding-top:-20px;
+}
